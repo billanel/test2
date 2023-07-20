@@ -1,0 +1,14 @@
+<!-- src/app/product-add/product-add.component.html -->
+<h2>Add New Product</h2>
+<div>
+  <label for="name">Name:</label>
+  <input type="text" id="name" [(ngModel)]="newProduct.name" />
+
+  <label for="price">Price:</label>
+  <input type="number" id="price" [(ngModel)]="newProduct.price" />
+
+  <label for="description">Description:</label>
+  <textarea id="description" [(ngModel)]="newProduct.description"></textarea>
+
+  <button (click)="addProduct()">Add Product</button>
+</div>

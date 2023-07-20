@@ -1,0 +1,14 @@
+<!-- src/app/product-update/product-update.component.html -->
+<h2>Update Product</h2>
+<div *ngIf="product">
+  <label for="name">Name:</label>
+  <input type="text" id="name" [(ngModel)]="product.name" />
+
+  <label for="price">Price:</label>
+  <input type="number" id="price" [(ngModel)]="product.price" />
+
+  <label for="description">Description:</label>
+  <textarea id="description" [(ngModel)]="product.description"></textarea>
+
+  <button (click)="updateProduct()">Update Product</button>
+</div>
